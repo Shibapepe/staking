@@ -553,7 +553,7 @@ async function refreshBal(sClass) {
 
     console.log('nBalMain', nBalMain);
 
-    let nBalMainW = nBalMain / 10**18;
+    let nBalMainW = nBalMain / 10**9;
 
     $('#user-main-balance').attr('bal', nBalMainW).html(`Balance: ${nBalMainW} ${_CONTRACT_DATA[_NETWORK_ID].TOKEN.symbol}`);
 
